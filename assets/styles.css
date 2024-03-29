@@ -9,13 +9,13 @@ body {
     margin: 0px;
     padding: 0px;
     color: #89D2DC;
-    background-image: url(images/background.webp);
+    background-image: url(images/background.avif);
     background-repeat: repeat;
     background-size: 100%;
 }
 
 header {
-    background-color: rgba(19, 19, 20, 0.5);
+    background-color: rgba(19, 19, 20, 1);
     padding-left: 20px;
     color: #ebf5f6;
 }
@@ -45,4 +45,22 @@ a {
 
 a:hover {
     background: #101D42;
+}
+
+.selfie {
+    border-radius:50%;
+    border: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 50px;
+}
+
+.titlename {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: xx-large;
+    -webkit-text-stroke: 2px black;
+    color: white;
+    margin-top: 10px;
 }
