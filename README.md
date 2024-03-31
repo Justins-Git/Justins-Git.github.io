@@ -1,11 +1,11 @@
 # Personal Website
 ## Introduction
-This repository contains the source code for my personal website, [Your Name]'s Portfolio. The website showcases my professional portfolio, including projects, blogs, and contact information. Built with [Technology Stack], it's designed to be responsive, accessible, and easy to navigate.
+This repository contains the source code for my personal website. The website showcases my professional portfolio, including projects and my contact information.
 
 ## Features
 Portfolio: A detailed showcase of my projects, including descriptions, images, and links to live demos or GitHub repositories.  
 About Me: A section about my professional background, skills, and interests.  
-Contact Form: A simple form for visitors to contact me directly through the website.
+Contact: A place for links to all places you can reach me including GitHub, my email, LinkedIn, etc.
 
 ## To-Do
 - [ ] About Me
