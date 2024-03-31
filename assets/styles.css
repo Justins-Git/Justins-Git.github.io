@@ -1,27 +1,37 @@
+
+/* General Rules */
+
 * { 
     margin: 0; 
     padding: 0; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    caret-color: transparent;
+    -webkit-text-stroke: 1px black; 
 } 
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace) !important;
     margin: 0px;
     padding: 0px;
-    color: #89D2DC;
-    background-image: url(images/background.avif);
+    color: #89D2DC; 
+    background-image: url(images/background.png);
     background-repeat: repeat;
     background-size: 100%;
 }
 
-header {
-    background-color: rgba(19, 19, 20, 1);
-    padding-left: 20px;
-    color: #ebf5f6;
+.code-like {
+    background-color: black;
+    border-color: #30363D;
+    border-radius: 0.4rem;
+    border-style: solid;
+    border-width: max(1px, 0.0625rem);
 }
 
-footer {
-    background-color: #232ED1;
+/* Header */
+
+header {
+    background-color: rgba(19, 19, 20, 1);
+    color: #ebf5f6;
 }
 
 ul {
@@ -32,20 +42,26 @@ ul {
 
 li {
     display: inline-block;
-    padding-right: 20px;
+    padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+nav {
+    font-size: x-large;
 }
 
 a {
     text-decoration: none;
     color: #89D2DC; 
-    padding: 10px;
+    padding: 15px;
 }
 
 a:hover {
     background: #101D42;
 }
+
+/* About Me Section */
 
 .selfie {
     border-radius:50%;
@@ -53,14 +69,42 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    margin-top: 50px;
+    margin-top: 75px;
 }
 
 .titlename {
     text-align: center;
     text-transform: capitalize;
     font-size: xx-large;
-    -webkit-text-stroke: 2px black;
-    color: white;
-    margin-top: 10px;
+    color: #89D2DC; 
+    display: table;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.aboutme {
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.flexcontainer {
+    display: flex;
+}
+
+.flexcontainer.space-around {
+    justify-content: space-around;
+}
+
+.flexcontainer.space-between {  
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #232ED1;
 }
