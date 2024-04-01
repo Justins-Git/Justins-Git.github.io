@@ -86,6 +86,8 @@ a:hover {
     text-align: center;
     justify-content: center;
     padding: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 h1 {
@@ -104,9 +106,54 @@ h1 {
     justify-content: space-between;
 }
 
+/* Footer */
+
 footer > p {
     justify-content: center;
     text-align: center;
     margin-top: 20px;
     text-transform: uppercase;
+}
+
+/* Media */
+@media screen and (max-width: 775px) {
+    li {
+        font-size: 16px;
+        padding-right: 25px;
+
+    }
+
+    .selfie {
+        width: 250px;
+    }
+
+    .titlename {
+        font-size: 20px;
+    }
+
+    .aboutme {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    li {
+        font-size: 12px;
+        padding-right: 0px;
+
+    }
+
+    .selfie {
+        width: 200px;
+    }
+
+    .titlename {
+        font-size: 16px;
+    }
+
+    .aboutme {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
