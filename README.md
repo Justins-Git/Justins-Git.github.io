@@ -8,7 +8,7 @@ About Me: A section about my professional background, skills, and interests.
 Contact: A place for links to all places you can reach me including GitHub, my email, LinkedIn, etc.
 
 ## To-Do
-- [ ] About Me
+- [X] About Me
 - [ ] Portfolio
 - [ ] Social Links
 - [ ] Contact Form
