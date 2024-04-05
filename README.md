@@ -9,7 +9,6 @@ Contact: A place for links to all places you can reach me including GitHub, my e
 
 ## To-Do
 - [X] About Me
-- [ ] Portfolio
-- [ ] Social Links
-- [ ] Contact Form
+- [X] Portfolio
+- [X] Social Links
 - [ ] ...more to be added
