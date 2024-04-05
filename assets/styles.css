@@ -97,34 +97,45 @@ h1 {
     padding-bottom: 20px;
 }
 
-/* Contact Section */
+/* Contact & Portfolio Section */
 
 section li {
     flex: 1;
     flex-basis: 100%;
     text-align: center;
     margin: 40px;
+    max-width: 300px;
 }
 
-.contact img {
-    width: 40%;
+section ul {
+    flex-wrap: wrap;
 }
 
-.contact {
+.cont img {
+    width: 50%;
+}
+
+.cont {
     margin-top: 60px;
 }
 
-.contact a {
+.cont a {
     display: block;
     padding: 25px;
 }
 
-.contact p {
+.cont p {
     margin-top: 20px;
 }
 
-.contact li:hover {
+.cont li:hover {
     background: var(--highlight);
+}
+
+.fill img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 /* Flex Container Rules */
