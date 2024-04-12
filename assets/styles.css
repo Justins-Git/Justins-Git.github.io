@@ -112,7 +112,10 @@ section ul {
 }
 
 .cont img {
-    width: 50%;
+    float: left;
+    width:  100px;
+    height: 200px;
+    object-fit: contain;
 }
 
 .cont {
@@ -125,7 +128,7 @@ section ul {
 }
 
 .cont p {
-    margin-top: 20px;
+    margin-top: 220px;
 }
 
 .cont li:hover {
