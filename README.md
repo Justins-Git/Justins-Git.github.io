@@ -11,4 +11,5 @@ Contact: A place for links to all places you can reach me including GitHub, my e
 - [X] About Me
 - [X] Portfolio
 - [X] Social Links
+- [ ] Java Script Implementation
 - [ ] ...more to be added
