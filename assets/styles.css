@@ -111,7 +111,7 @@ section ul {
     flex-wrap: wrap;
 }
 
-.cont img {
+.cont .projimg {
     float: left;
     width:  100px;
     height: 200px;
@@ -127,8 +127,12 @@ section ul {
     padding: 25px;
 }
 
-.cont p {
+.projp {
     margin-top: 220px;
+}
+
+.contp {
+    margin-top: 20px;
 }
 
 .cont li:hover {
@@ -139,6 +143,10 @@ section ul {
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
+}
+
+.logo {
+    float: center;
 }
 
 /* Flex Container Rules */
