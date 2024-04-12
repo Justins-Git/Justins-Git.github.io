@@ -116,7 +116,7 @@ section ul {
 }
 
 .cont {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .cont a {
@@ -184,6 +184,21 @@ footer > p {
     .aboutme {
         margin-left: 75px;
         margin-right: 75px;
+        margin-top: 65px;
+        font-size: 75%;
+    }
+
+    section li {
+        margin: 30px;
+        max-width: 250px;
+    }
+
+    .cont {
+        margin-top: 30px;
+    }
+
+    .cont p {
+        margin-top: 15px;
     }
 }
 
@@ -200,5 +215,20 @@ footer > p {
     .aboutme {
         margin-left: 50px;
         margin-right: 50px;
+        margin-top: 40px;
+        font-size: 50%;
+    }
+
+    section li {
+        margin: 20px;
+        max-width: 200px;
+    }
+
+    .cont {
+        margin-top: 20px;
+    }
+
+    .cont p {
+        margin-top: 10px;
     }
 }
