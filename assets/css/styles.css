@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #111;
+}
+
+p {
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary {
+    background-color: #555;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('../images/gorge-min.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    /* Override font color just for hero-content section since it was unreadable */
+    color: #111;
+}
+
+.hero-content {
+    background-color: rgb(255,255,255,70%);
+    padding: 10px 20px;
+    border: 3px black solid;
+}
+
+/* About Section */
+.about-section {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.funfacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.factlist {
+    width: 50%;
+    margin-left: 30px;
+    padding-right: 50px;
+}
+
+.about-content .leftimg {
+    width: 25%;
+    margin-right: 30px;
+}
+
+.about-content .rightimg {
+    width: 25%;
+}
+
+.bio {
+    max-width: 600px;
+}
+
+.bio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.bio ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bio ul li {
+    margin-bottom: 15px;
+}
+
+/* Assignments Section */
+.assignments-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.assignments-section h2 {
+    text-decoration: underline;
+}
+
+.assignments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.assignments-item {
+    position: relative;
+    opacity: 1;
+}
+
+.assignments-section a {
+    color: black;
+}
+
+/* I got this transition effect online */
+/* source: https://www.proglobalbusinesssolutions.com/css-hover-effects/ */
+
+.assignments-section a:hover {
+    color: blue;
+    box-shadow: 0 0 5px black;
+    text-shadow: 0 0 5px lightblue;
+}
+
+.assignments-section a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px black;
+}
+
+.assignments-section a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: black;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.assignments-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p {
+    color: #999;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #bbb;
+}
+
+.logo {
+    max-width: 12px;
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.5rem;
+    }
+
+    .about-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .funfacts {
+        flex-direction: row;
+    }
+
+    .factlist {
+        width: 50%;
+        text-align: left;
+    }
+
+    .about-content .leftimg, .about-content .rightimg {
+        width: 25%;
+    }
+}

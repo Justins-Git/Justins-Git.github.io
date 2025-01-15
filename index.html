@@ -1,42 +1,105 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Justin Talbot</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/styles.css">
-    </head>
-    <body>
-        <!-- Header -->
-        <header>
-            <nav class="flexcontainer space-around code-like">
-                <ul>
-                    <li><a href="index.html">/Home/</a></li>
-                    <li><a href="pages/portfolio.html">/Projects/</a></li>
-                    <li><a href="pages/contact.html">/Contact/</a></li>
-                    <li><a href="pages/about.html">/About/</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section>
-            <!-- Picture of Me -->
-            <div class"flexcontainer">
-                <figure>
-                    <img class="selfie" src="assets/images/me2-min.jpg" alt="picture of me" width="300">
-                    <figcaption class="titlename code-like">/Users/Justin-Talbot/</figcaption>
-                </figure>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Talbot - Software Developer and Designer</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Justin Talbot - Software Developer and Designer</h1>
+            <p>ISTE240 Homepage</p>
+            <div class="hero-buttons">
+                <a href="#assignments" class="btn">Explore My Assignments</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <!-- Footer -->
-        <footer>
-            <p class="flexcontainer code-like">
-                ©COPYRIGHT 2024, Justin Talbot.
-            </p>
-        </footer>
-    </body>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <img class="leftimg" src="assets/images/me-min.jpg" alt="Justin Talbot on a hike">
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>
+                    I am a 4th year student here at RIT with a passion for software development
+                    and web design. My major is a bit complicated since I am part of the 
+                    individualized study program here at RIT. If I had to sum up my program, it
+                    is a weird mix of computer engineering, software engineering, and web design.
+                    I have a minor in computer science and I am also doing my immersion in mathematics. 
+                </p>
+                
+            </div>
+            <div class="funfacts">
+                <div class="factlist">
+                    <h3>Some Fun Facts About Me:</h3>
+                    <ul>
+                        <li>I have two cats, their names are Oreo and Prancer (don't ask my brother named him prancer).</li>
+                        <li>I have a twin brother who also attends RIT and he is a Computer Science major.</li>
+                        <li>I am currently developing my take on a cat themed mario party game.</li>
+                    </ul>
+                </div>
+                <img class="rightimg" src="assets/images/me2-min.jpg" alt="Justin Talbot in New York City">
+            </div>
+        </div>
+    </section>
+
+    <!-- Assignments Section -->
+    <section id="assignments" class="assignments-section">
+        <h2>My Assignments</h2>
+        <div class="assignments-grid">
+            <div class="assignments-item">
+                <div class="assignments-container">
+                    <h3>Exercises</h3>
+                    <a href="exer/exercise02/Exercise02.html">Exercise 2</a>
+                    <a href="exer/exercise03/Exercise03.html">Exercise 3</a>
+                    <a href="exer/exercise04/EX04.html">Exercise 4</a>
+                    <a href="exer/exercise05/EX05.html">Exercise 5</a>
+                    <a href="exer/exercise06/orderform.php">Exercise 6</a>
+                    <a href="exer/exercise07/index.php">Exercise 7</a>
+                </div>
+            </div>
+            <div class="assignments-item">
+                <div class="assignments-container">
+                    <h3>Projects</h3>
+                    <a href="project1/index.html">Project 1 Part A</a>
+                    <a href="final/index.html">Project 1 Part B</a>
+                </div>
+            </div>
+            <div class="assignments-item">
+                <div class="assignments-container">
+                    <h3>Group Project</h3>
+                    <a href="#">Group Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <h3>jmt8032@rit.edu</h3>
+        <form action="mailto:jmt8032@g.rit.edu" method="GET" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Justin Talbot. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/justin-talbot-55759b277/">LinkedIn</a>
+            <a href="https://github.com/Justins-Git">GitHub</a>
+            <a href="https://justin-talbot.com/">Actual Personal Website (Work in Progress)</a>
+        </div>
+    </footer>
+</body>
 </html>
