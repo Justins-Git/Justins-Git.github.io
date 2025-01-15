@@ -1,270 +1,237 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: "Quicksand", sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f7fafc; /* Light background */
     color: #333;
 }
 
 h1, h2, h3 {
-    color: #111;
+    color: #2b6cb0; /* Primary color */
+    text-align: center;
 }
 
-p {
-    color: #555;
+/* h1 styles and animation */
+h1 {
+    color:#f7fafc;
+    font-size: 3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+h1:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* h2 styles and animation */
+h2 a {
+    color: #2b6cb0;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+  
+h2 a::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #2b6cb0;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+h2 a:hover {
+    color: #2b6cb0;
+}
+  
+h2 a:hover::after { 
+    width: 100%; 
+    left: 0; 
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.career-name {
+    color: #f7fafc;
 }
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #2981c9;
+}
+
+a:hover {
+    color: #002447; /* Light gray for hover */
+}
+
+p {
+    margin: 10px 0;
+    color: #555;
 }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #333;
+    background-color: #2b6cb0; /* Primary color */
     color: #fff;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-secondary {
-    background-color: #555;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #555;
+    background-color: #38a169; /* Secondary color */
+    transform: scale(1.05); /* Slight hover zoom effect */
+}
+
+/* Section Divider */
+.section-divider {
+    border: 0;
+    margin: 0px;
+    padding: 0px;
+    height: 5px;
+    background: linear-gradient(to right, #2b6cb0, #38a169); /* Gradient divider */
 }
 
 /* Hero Section */
-.hero-section {
+.hero {
     height: 100vh;
-    background: url('../images/gorge-min.jpg') no-repeat center center/cover;
+    background: linear-gradient(to bottom, rgba(43, 108, 176, 0.4), rgba(38, 162, 105, 0.25)), 
+                url('../images/gorge-min.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
-}
-
-.hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    /* Override font color just for hero-content section since it was unreadable */
-    color: #111;
+    color: #edf2f7; /* Light gray text */
+    position: relative;
 }
 
 .hero-content {
-    background-color: rgb(255,255,255,70%);
-    padding: 10px 20px;
-    border: 3px black solid;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px 60px;
+    border-radius: 10px;
 }
 
-/* About Section */
-.about-section {
+/* About and Projects Section */
+.about-section, .projects-section {
     padding: 50px;
     background-color: #fff;
 }
 
-.about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.funfacts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.factlist {
-    width: 50%;
-    margin-left: 30px;
-    padding-right: 50px;
-}
-
-.about-content .leftimg {
-    width: 25%;
-    margin-right: 30px;
-}
-
-.about-content .rightimg {
-    width: 25%;
-}
-
-.bio {
-    max-width: 600px;
-}
-
-.bio h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.bio ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.bio ul li {
-    margin-bottom: 15px;
-}
-
-/* Assignments Section */
-.assignments-section {
-    padding: 50px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.assignments-section h2 {
-    text-decoration: underline;
-}
-
-.assignments-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.assignments-item {
-    position: relative;
-    opacity: 1;
-}
-
-.assignments-section a {
-    color: black;
-}
-
-/* I got this transition effect online */
-/* source: https://www.proglobalbusinesssolutions.com/css-hover-effects/ */
-
-.assignments-section a:hover {
-    color: blue;
-    box-shadow: 0 0 5px black;
-    text-shadow: 0 0 5px lightblue;
-}
-
-.assignments-section a:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px black;
-}
-
-.assignments-section a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: black;
-    transition: .5s;
-    transform: scale(.9);
-    z-index: -1;
-}
-
-.assignments-container {
+.about-content, .projects-content {
     display: flex;
     flex-direction: column;
+    gap: 40px;
+}
+
+.about-item, .project {
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+
+.about-item img, .project img {
+    width: 20%; /* Adjusted for better layout */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #2b6cb0; /* Image border in primary color */
+}
+
+.text-box {
+    width: 50%; /* Adjusted for closer layout */
+    padding: 20px;
+    border: 2px solid #38a169; /* Secondary color */
+    border-radius: 10px;
+    background-color: #edf2f7; /* Light gray background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.text-box:hover {
+    transform: translateY(-5px); /* Hover lift effect */
+}
+
+.text-box h3 {
+    margin-top: 0;
+    color: #2b6cb0; /* Primary color */
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 /* Contact Section */
 .contact-section {
     padding: 50px;
-    background-color: #fff;
     text-align: center;
+    background-color: #f7fafc; /* Light background */
 }
 
-.contact-section form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-section input, .contact-section textarea {
-    padding: 10px;
+.contact-info p {
     margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-.contact-section button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.contact-info a {
+    color: #222f9e; /* Accent color */
+    text-decoration: underline;
 }
 
-.contact-section button:hover {
-    background-color: #555;
+.contact-info a:hover {
+    color: #2b6cb0; /* Primary color on hover */
 }
 
 /* Footer */
-.footer {
+footer {
     padding: 20px;
-    background-color: #333;
-    color: #fff;
     text-align: center;
+    background-color: #2b6cb0; /* Primary color */
+    font-size: 0.9em;
 }
 
-.footer p {
-    color: #999;
-}
-
-.footer .social-links a {
-    margin: 0 10px;
+footer p {
     color: #fff;
-    transition: color 0.3s ease;
 }
 
-.footer .social-links a:hover {
-    color: #bbb;
-}
-
-.logo {
-    max-width: 12px;
-    height: auto;
-}
-
-/* Media Queries */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 3rem;
+    .about-item, .project {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .hero-content p {
-        font-size: 1.5rem;
+    .about-item img, .project img, .text-box {
+        width: 100%;
     }
 
-    .about-content {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .funfacts {
-        flex-direction: row;
-    }
-
-    .factlist {
-        width: 50%;
-        text-align: left;
-    }
-
-    .about-content .leftimg, .about-content .rightimg {
-        width: 25%;
+    .about-content, .projects-content {
+        gap: 20px;
     }
 }

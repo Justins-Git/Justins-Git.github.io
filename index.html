@@ -3,103 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justin Talbot - Software Developer and Designer</title>
+    <title>Justin Talbot - Software Developer</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="hero-section">
+    <!-- Header -->
+    <header class="hero">
         <div class="hero-content">
-            <h1>Justin Talbot - Software Developer and Designer</h1>
-            <p>ISTE240 Homepage</p>
+            <h1>Justin Talbot</h1>
+            <h3 class="career-name">Software Developer and Designer</h3>
             <div class="hero-buttons">
-                <a href="#assignments" class="btn">Explore My Assignments</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                <a href="#about" class="btn">About Me</a>
+                <a href="#projects" class="btn">View My Projects</a>
             </div>
         </div>
     </header>
 
-    <!-- About Section -->
+    <hr class="section-divider">
+
+    <!-- About Me Section -->
     <section id="about" class="about-section">
+        <h2><a>About Me</a></h2>
         <div class="about-content">
-            <img class="leftimg" src="assets/images/me-min.jpg" alt="Justin Talbot on a hike">
-            <div class="bio">
-                <h2>About Me</h2>
-                <p>
-                    I am a 4th year student here at RIT with a passion for software development
-                    and web design. My major is a bit complicated since I am part of the 
-                    individualized study program here at RIT. If I had to sum up my program, it
-                    is a weird mix of computer engineering, software engineering, and web design.
-                    I have a minor in computer science and I am also doing my immersion in mathematics. 
-                </p>
-                
-            </div>
-            <div class="funfacts">
-                <div class="factlist">
-                    <h3>Some Fun Facts About Me:</h3>
-                    <ul>
-                        <li>I have two cats, their names are Oreo and Prancer (don't ask my brother named him prancer).</li>
-                        <li>I have a twin brother who also attends RIT and he is a Computer Science major.</li>
-                        <li>I am currently developing my take on a cat themed mario party game.</li>
-                    </ul>
+            <div class="about-item">
+                <img src="assets/images/me-min.jpg" alt="Justin Talbot">
+                <div class="text-box">
+                    <p>
+                        I am a passionate software developer blending computer engineering, software design, and web development. 
+                        As part of RIT's Individualized Study program, I’ve built a unique skillset spanning computer science, software development, 
+                        and web design. My work reflects my commitment to creating impactful solutions and visually engaging designs.
+                    </p>
                 </div>
-                <img class="rightimg" src="assets/images/me2-min.jpg" alt="Justin Talbot in New York City">
+            </div>
+            <div class="about-item reverse">
+                <img src="assets/images/me2-min.jpg" alt="Justin Talbot">
+                <div class="text-box">
+                    <p>
+                        Beyond development, I enjoy exploring game design, often mixing my love for creative challenges with 
+                        programming expertise. I aim to make technology more intuitive and enjoyable for everyone.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Assignments Section -->
-    <section id="assignments" class="assignments-section">
-        <h2>My Assignments</h2>
-        <div class="assignments-grid">
-            <div class="assignments-item">
-                <div class="assignments-container">
-                    <h3>Exercises</h3>
-                    <a href="exer/exercise02/Exercise02.html">Exercise 2</a>
-                    <a href="exer/exercise03/Exercise03.html">Exercise 3</a>
-                    <a href="exer/exercise04/EX04.html">Exercise 4</a>
-                    <a href="exer/exercise05/EX05.html">Exercise 5</a>
-                    <a href="exer/exercise06/orderform.php">Exercise 6</a>
-                    <a href="exer/exercise07/index.php">Exercise 7</a>
+    <hr class="section-divider">
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2><a>Projects</a></h2>
+        <div class="projects-content">
+            <div class="project">
+                <img src="assets/images/project1.jpg" alt="Project Image">
+                <div class="text-box">
+                    <h3>Password Manager</h3>
+                    <p>
+                        Insert password manager text here...
+                    </p>
+                    <a href="https://github.com/Justins-Git" target="_blank">View on GitHub</a>
                 </div>
             </div>
-            <div class="assignments-item">
-                <div class="assignments-container">
-                    <h3>Projects</h3>
-                    <a href="project1/index.html">Project 1 Part A</a>
-                    <a href="final/index.html">Project 1 Part B</a>
+            <div class="project reverse">
+                <img src="assets/images/project2.jpg" alt="Project Image">
+                <div class="text-box">
+                    <h3>VPN</h3>
+                    <p>
+                        Insert VPN text here...
+                    </p>
+                    <a href="https://github.com/Justins-Git" target="_blank">View on GitHub</a>
                 </div>
             </div>
-            <div class="assignments-item">
-                <div class="assignments-container">
-                    <h3>Group Project</h3>
-                    <a href="#">Group Project</a>
+            <div class="project">
+                <img src="assets/images/project1.jpg" alt="Project Image">
+                <div class="text-box">
+                    <h3>Capstone Project - TBD</h3>
+                    <p>
+                        [placeholder]
+                    </p>
+                    <a href="https://github.com/Justins-Git" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <hr class="section-divider">
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <h3>jmt8032@rit.edu</h3>
-        <form action="mailto:jmt8032@g.rit.edu" method="GET" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="text" name="subject" placeholder="Subject" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+        <h2><a>Contact Me</a></h2>
+        <div class="contact-info">
+            <p>
+                | <a href="https://linkedin.com/in/justin-talbot" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/Justins-Git" target="_blank">GitHub</a> |
+            </p>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 Justin Talbot. All Rights Reserved.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/justin-talbot-55759b277/">LinkedIn</a>
-            <a href="https://github.com/Justins-Git">GitHub</a>
-            <a href="https://justin-talbot.com/">Actual Personal Website (Work in Progress)</a>
-        </div>
+    <footer>
+        <p>&copy; 2025 Justin Talbot. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
